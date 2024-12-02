@@ -70,7 +70,22 @@ fun main() {
 
 
     }
-     // Condicionales
+    /*
+Condicionales
+
+== Comparar si dado dos argumentos son iguales. true/false
+!= Comparar si dado los argumentos son distintos true/false
+&& Compara si dados dos condiciones, que ambas se cumplan. true/false
+|| Compara si dadas dos o más condiciones, al menos 1 de cumpla. true/false
+< . true/false
+> . true/false
+<= .....
+>= .....
+*/
+
+
+
+    // Condicionales
    valueA = 2
    valueB = 7
     if (valueA > valueB) {

@@ -70,6 +70,22 @@ fun main() {
 
 
     }
+     // Condicionales
+   valueA = 2
+   valueB = 7
+    if (valueA > valueB) {
+// Si se cumple, procede a la lógica
+        if(valueB == 3) {
+//Haz esto...
+        } else {
+//Sino aquello...
+        }
+    } else {
+//Sino se cumple el argumento...
+// Procede aqui.
+    }
+
+
 
 
 

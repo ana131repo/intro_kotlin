@@ -8,10 +8,20 @@ Ejemplo:
 jugados 10 partidos ganados 9 -> 90%
      */
 
-    var victorias: Int = 9
-    var partidos: Int = 10
+    print("Introduce los partidos jugados")
+    var jugados = readln().toIntOrNull()
+    print("Introduce los partidos ganados")
+    var ganados = readln().toIntOrNull()
+    if(jugados !=null && ganados !=null){
+        porcentaje(jugados,ganados)
+    }else{
+        println("Error: Los números ingresados no son válidos")   }
 
-    var porcentaje = (victorias * 100)/partidos
-    println("jugados $partidos partidos ganados $victorias --> $porcentaje%")
 
+
+
+}
+fun porcentaje(jugados:Int,ganados:Int){
+    var porcentaje = (ganados * 100)/jugados
+    println("jugados $jugados partidos jugados y  ganados $ganados --> $porcentaje%")
 }

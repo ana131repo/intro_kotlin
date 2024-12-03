@@ -6,15 +6,19 @@ Calcula el volumen de una piscina dado el ancho, largo y la altura
 Ejemplo:
 ancho 4 largo 4 alto 3 -> 48
     */
-    print("Calcular el volumen de una pìscina")
+    println("Calcular el volumen de una pìscina")
     println("Escribe el ancho")
-    val ancho = readln()
+    val ancho = readln().toFloatOrNull()
     println("Escribe el largo")
-    val largo = readln()
+    val largo = readln().toFloatOrNull()
     println("Escribe la altura")
-    val alto = readln()
-    /*val resultado = ancho*largo*alto
+    val alto = readln().toFloatOrNull()
 
-     println("Volumen = (ancho $ancho * largo $largo * alto $alto) --> $resultado")*/
+    if(ancho!=null && largo!=null && alto!=null){
+        volumen_piscina(ancho,largo,alto)
+    }
 }
-fun volumen_piscina(){}
+fun volumen_piscina(ancho:Float,largo:Float,alto:Float){
+    val resultado = ancho*largo*alto
+    println("Volumen piscina = $resultado ($ancho * $largo * $alto")
+}

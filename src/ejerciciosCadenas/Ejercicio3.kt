@@ -10,7 +10,7 @@ fun main() {
     println("Escribe una texto")
     var texto = readln()
 
-    println("Escribe el caracter que quieres sustituir")
+    println("Escribe el caracter que quieres eliminar")
     var eliminar = readln()[0]
     eliminarCaracter(texto, eliminar)
 

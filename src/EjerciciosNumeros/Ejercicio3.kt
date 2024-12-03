@@ -7,23 +7,21 @@ Ejemplo:
 5/0 -> null
 5/2 -> 2,5
 */
-    val dividendo:Int = 5
-    val divisor:Int = 2
-
-
-    val resultado = if (divisor == 0) {
-        null
+    print("Dime número 1")
+    val dividendo = readln().toIntOrNull()
+    print("Dime número 2")
+    val divisor = readln().toIntOrNull()
+    if(dividendo != null && divisor != null){
+        division(dividendo,divisor)
     }else{
-         dividendo.toFloat()/divisor.toFloat()
+        println("Error: Los números que ingresaste son inválidos")
     }
 
-    println(resultado)
 
 
+}
+fun division(dividendo:Int,divisor:Int){
 
-
-
-
-
-
+    val resultado = dividendo.toFloat()/divisor.toFloat()
+    println("La división de dos números enteros $dividendo / $divisor = $resultado")
 }

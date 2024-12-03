@@ -9,8 +9,10 @@ Ejemplo:2*2 -> 4
 
     print("Dime número 1")
     val num1 = readln().toIntOrNull()
+
     print("Dime número 2")
     val num2 = readln().toIntOrNull()
+
     if (num1 != null && num2 != null) {
         multiplicar(num1, num2)
     } else {

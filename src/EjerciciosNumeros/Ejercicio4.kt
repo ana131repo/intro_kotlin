@@ -7,16 +7,19 @@ Ejemplo:
 5/2 -> 2
      */
 
-    val dividendo:Int= 5
-    val divisor: Int = 2
-
-    val resultado = if(divisor == 0){
-        null
+    print("Dime número 1")
+    val dividendo = readln().toFloatOrNull()
+    print("Dime número 2")
+    val divisor = readln().toFloatOrNull()
+    if(dividendo !=null && divisor !=null){
+        division(dividendo,divisor)
     }else{
-        dividendo/divisor
+        println("Error: Los números que ingresaste son inválidos")
     }
 
-    println(resultado)
 
-
+}
+fun division(dividendo: Float,divisor:Float){
+    var dividir = dividendo/divisor
+    println("La multiplicación de dos flotantes $dividendo / $divisor = $dividir")
 }

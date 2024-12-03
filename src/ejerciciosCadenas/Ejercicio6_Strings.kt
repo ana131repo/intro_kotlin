@@ -19,11 +19,10 @@ fun main() {
     println(resultado)
 
 
-
 }
 
 fun isIguales(texto1: String, texto2: String): Boolean {
-    return texto1.equals(texto2,ignoreCase = true,)
+    return texto1.equals(texto2, ignoreCase = true)
 
 
 }

@@ -23,5 +23,4 @@ fun comparar(dato1:Float,dato2:Float){
         dato2
         }
     println("El numero mayor es: $resultado")
-
 }

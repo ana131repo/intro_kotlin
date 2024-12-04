@@ -9,18 +9,18 @@ fun main(){
 
 
     println("Escribe una texto")
-    var texto = readln()
+    val texto = readln()
 
     println("Escribe el caracter que quieres sustituir")
-    var sustituir = readln()
+    val sustituir = readln()
 
     println("Escribe el caracter que quieres insertar")
-    var insertar = readln()
+    val insertar = readln()
     reemplazar(texto,sustituir,insertar)
 
 }
 
 fun reemplazar(texto:String,sustituir:String,insertar:String){
-    val nuevotexto = texto.replace(sustituir,insertar)
-    println(nuevotexto)
+    val nuevoTexto = texto.replace(sustituir,insertar)
+    println(nuevoTexto)
 }

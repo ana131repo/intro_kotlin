@@ -10,12 +10,12 @@ fun main() {
 
 
     println("Escribe una texto")
-    var texto1 = readln()
+    val texto1 = readln()
 
     println("Escribe una texto")
-    var texto2 = readln()
+    val texto2 = readln()
     
-    var resultado = isIguales(texto1, texto2)
+    val resultado = isIguales(texto1, texto2)
     println(resultado)
 
 

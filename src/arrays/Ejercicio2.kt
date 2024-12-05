@@ -33,7 +33,7 @@ fun isEsxiste(numero: Int, conjunto: MutableList<Int>): Boolean {
     return existe
 }
 
-fun menu() {
+private fun menu() {
     println("Jugar [1]")
     println("Terminar [0]")
 }

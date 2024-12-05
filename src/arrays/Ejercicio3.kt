@@ -37,7 +37,7 @@ fun main() {
 
 }
 
-fun menu() {
+private fun menu() {
     println("Jugar[1]")
     println("Salir[0]")
 }

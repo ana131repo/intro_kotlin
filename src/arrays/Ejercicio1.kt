@@ -37,4 +37,7 @@ fun arrayBien(numero: Int, posicion: Int, numerosBien: MutableList<Int>) {
     for (numeros in numerosBien)
         print("$numeros ")
 
+
+    //
+
 }

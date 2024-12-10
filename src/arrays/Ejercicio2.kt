@@ -35,7 +35,6 @@ fun isEsxiste(numero: Int, conjunto: List<Int>): Boolean {
 
 
 fun menu2() {
-
     println("Jugar [1]")
     println("Terminar [0]")
 }

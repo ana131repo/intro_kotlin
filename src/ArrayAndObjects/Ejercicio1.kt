@@ -8,11 +8,11 @@ fun main() {
     var alumnosDeClase: MutableList<Alumno> = arrayListOf()
     var contador_clase: Int = 1
     var contador_Alumnos: Int = 1
-    //instancio la clase para inicializarla //creo el objeto miClase
+
+    //instancio la clase para inicializarla //crear el objeto miClase
     val miClase = Clase(contador_clase,alumnosDeClase)
 
     do {
-
         println("Nombre del alumno")
         val nombre_Alumno = readln()
         println("Edad del alumno")
@@ -22,9 +22,6 @@ fun main() {
         Clase(contador_clase, alumnosDeClase)
     } while (contador_Alumnos < 2)
     println(miClase)
-
-
-
 }
 
 class Alumno(

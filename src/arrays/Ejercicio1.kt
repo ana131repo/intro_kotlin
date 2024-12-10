@@ -6,7 +6,6 @@ fun main() {/*Ejercicio 1
             Ejemplo:
     [1,2,3,4,5,6] inserta 4 en la posición 2 -> [1,2,4,3,4,5,6]*/
 
-    //val numeros = intArrayOf(1, 2, 3, 4, 5, 6)
     val numerosBien = mutableListOf(1, 2, 3, 4, 5, 6)
 
     println("Escribe un número ")

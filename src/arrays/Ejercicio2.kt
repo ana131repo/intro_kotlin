@@ -8,7 +8,7 @@ fun main() {
     [1,2,3,4,5,6] existe 3 -> true*/
 
     do {
-        menu()
+        menu2()
         println("Selecciona")
         val opcion = readln().toIntOrNull()
 
@@ -33,7 +33,7 @@ fun isEsxiste(numero: Int, conjunto: MutableList<Int>): Boolean {
     return existe
 }
 
-fun menu() {
+fun menu2() {
     println("Jugar [1]")
     println("Terminar [0]")
 }

@@ -1,3 +1,5 @@
+import Entities.Product
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
@@ -101,6 +103,19 @@ Condicionales
     }
 
 
+    val product = Product(
+        id = 1,
+        name = "Air Fryer",
+        quantity = 1.0f,
+        image = "Una imagen ramdon de internter",
+        descripcion = "Una descripcion",
+        price = 99f,
+        reference = TODO()
+    )
+
+    product.name ="nuevo nombre"
+    Product.getnewId()
+    
 
 
 

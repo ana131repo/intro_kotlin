@@ -33,11 +33,9 @@ fun isEsxiste(numero: Int, conjunto: MutableList<Int>): Boolean {
     return existe
 }
 
-<<<<<<< HEAD
+
 fun menu2() {
-=======
-private fun menu() {
->>>>>>> Exercise4_Arrays
+
     println("Jugar [1]")
     println("Terminar [0]")
 }

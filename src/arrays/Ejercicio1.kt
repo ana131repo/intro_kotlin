@@ -13,24 +13,10 @@ fun main() {/*Ejercicio 1
     println("Escribe una posición")
     val posicion = readln().toInt()
 
-    //array1(numero, posicion, numeros)
-
-    arrayBien(numero,posicion,numerosBien)
+    arrayBien(numero, posicion, numerosBien)
 
 }
 
-//fun array1(numero: Int, posicion: Int, numeros: IntArray) {
-//    println(numeros.size)   //tamaño del array numeros
-//    val nuevoArray = IntArray(numeros.size + 1)
-//    println(nuevoArray.size)
-//    System.arraycopy(numeros, 0, nuevoArray, 0, numeros.size)
-//    nuevoArray[posicion] = numero
-//
-//    for (i in 0..nuevoArray.size) {
-//        println(nuevoArray[i])
-//    }
-//
-//}
 
 fun arrayBien(numero: Int, posicion: Int, numerosBien: MutableList<Int>) {
     numerosBien.add(posicion, numero)

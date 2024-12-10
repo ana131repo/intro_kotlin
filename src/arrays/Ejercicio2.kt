@@ -13,7 +13,7 @@ fun main() {
         val opcion = readln().toIntOrNull()
 
 
-        var conjunto = mutableListOf(1, 2, 3, 4, 5)
+        val conjunto = listOf(1, 2, 3, 4, 5)
         println("Escribe un número")
         val numero = readln().toIntOrNull()
 
@@ -28,7 +28,7 @@ fun main() {
 
 }//fin main
 
-fun isEsxiste(numero: Int, conjunto: MutableList<Int>): Boolean {
+fun isEsxiste(numero: Int, conjunto: List<Int>): Boolean {
     val existe = numero in conjunto
     return existe
 }

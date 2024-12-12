@@ -4,8 +4,6 @@ class Agenda(
     var contacts: ArrayList<Contact>
 ) {
 
-
-
         fun createContact() {
 
         }

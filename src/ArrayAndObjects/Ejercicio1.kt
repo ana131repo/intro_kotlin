@@ -10,7 +10,7 @@ fun main() {
     var contador_Alumnos: Int = 1
 
     //instancio la clase para inicializarla //crear el objeto miClase
-    val miClase = Clase(contador_clase,alumnosDeClase)
+    val miClase = Clase(contador_clase, alumnosDeClase)
 
     do {
         println("Nombre del alumno")
@@ -20,9 +20,22 @@ fun main() {
         miClase.alumnosDeClase.add(Alumno(contador_Alumnos, nombre_Alumno, edad_alumno))
         contador_Alumnos++
         Clase(contador_clase, alumnosDeClase)
-    } while (contador_Alumnos < 2)
-    println(miClase)
-}
+
+    } while (contador_Alumnos < 3)
+
+    /*ejercicio2
+     Imprime por consola todos los alumnos cuyo nombre contiene "a" en cada una de las clases*/
+
+
+    println("Los alumnos de clase que contienen la letra 'a' son:")
+    for (a in alumnosDeClase) {
+        if (a.name.contains("a", ignoreCase = true)) {
+            println(a.name)
+        }
+    }
+
+
+}//fin main
 
 class Alumno(
     val id: Int,
@@ -44,7 +57,12 @@ class Clase(
     override fun toString(): String {
         return "Clase(id='$id',alumnos='$alumnosDeClase')"
     }
+
+
 }
+
+
+
 
 
 

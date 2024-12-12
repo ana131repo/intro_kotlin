@@ -1,5 +1,7 @@
 package ArrayAndObjects
+import ArrayAndObjects.Alumno
 import ArrayAndObjects.Clase
+
 
 
 fun main(){

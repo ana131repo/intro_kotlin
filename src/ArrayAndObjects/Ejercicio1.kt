@@ -19,7 +19,7 @@ fun main() {
         val edad_alumno = readln().toInt()
         println("Nota")
         val nota_alumno = readln().toFloat()
-        miClase.alumnosDeClase.add(Alumno(contador_Alumnos, nombre_Alumno, edad_alumno,nota_alumno))
+        miClase.alumnosDeClase.add(Alumno(contador_Alumnos, nombre_Alumno, edad_alumno, nota_alumno))
         contador_Alumnos++
         Clase(contador_clase, alumnosDeClase)
 
@@ -41,14 +41,33 @@ fun main() {
     alumnos suspendidos que no esten progresando de cada clase
 
     */
+    var alumnos_suspensos = arrayListOf<String>()
+    for (a in alumnosDeClase) {
+        if (alumnosAndNotas(a)) {
+            println("Resultado ejercicio3")
+            println("${a.name} está aprobado")
+        } else {
+            println("resultado ejercicio3")
+            println("${a.name} está progresando")
+            if(Clase.needHelp){
+                println("resultado Ejercicio4")
+                println("${a.name} necesita ayuda")
+                alumnos_suspensos.add(a.name)
+            }
 
-    for(a in alumnosDeClase){
-       if(alumnosAndNotas(a)==true){
-           println("${a.name} está aprobado")
-       }else{
-           println("${a.name} está progresando")
-       }
+        }
     }
+    println("resultado Ejercicio5_Array de suspensos")
+    println(alumnos_suspensos)
+
+    /*Ejercicio 4
+    Añade un atributo nuevo a la clase que sea needHelp que sera true cuando isApproved e isProgressing sean false.
+    Este atributo se debe autocalcular al iniciar la clase o cambiar el valor de isApproved o isProgressing a false e
+    imprime todos los alumnos suspendidos de cada clase que necesitan ayuda
+     */
+    /*Ejercicio 5
+    Obten un array nuevo de alumnos suspendidos de todas las clases*/
+
 
 
 }//fin main
@@ -76,23 +95,23 @@ class Clase(
     override fun toString(): String {
         return "Clase(id='$id',alumnos='$alumnosDeClase')"
     }
-    companion object{
-        val isApproved:Boolean = true
-         val isProgressing:Boolean=false
 
+    companion object {
+        val isApproved: Boolean = true
+        val isProgressing: Boolean = false
+        val needHelp:Boolean=true
 
     }
 
 
-
-
 }
-fun alumnosAndNotas(alumno: Alumno):Boolean{
-   if(alumno.nota>5 ){
-       return Clase.isApproved
-   }else{
-       return Clase.isProgressing
-   }
+
+fun alumnosAndNotas(alumno: Alumno): Boolean {
+    if (alumno.nota > 5) {
+        return Clase.isApproved
+    } else {
+        return Clase.isProgressing
+    }
 
 }
 

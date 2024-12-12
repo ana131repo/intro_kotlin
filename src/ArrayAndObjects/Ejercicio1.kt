@@ -17,7 +17,9 @@ fun main() {
         val nombre_Alumno = readln()
         println("Edad del alumno")
         val edad_alumno = readln().toInt()
-        miClase.alumnosDeClase.add(Alumno(contador_Alumnos, nombre_Alumno, edad_alumno))
+        println("Nota")
+        val nota_alumno = readln().toFloat()
+        miClase.alumnosDeClase.add(Alumno(contador_Alumnos, nombre_Alumno, edad_alumno,nota_alumno))
         contador_Alumnos++
         Clase(contador_clase, alumnosDeClase)
 
@@ -34,13 +36,28 @@ fun main() {
         }
     }
 
+    /*Ejercicio 3
+   Añade un atributo nuevo a la clase que sea isApproved y otra que sea isProgressing e imprime todos los
+    alumnos suspendidos que no esten progresando de cada clase
+
+    */
+
+    for(a in alumnosDeClase){
+       if(alumnosAndNotas(a)==true){
+           println("${a.name} está aprobado")
+       }else{
+           println("${a.name} está progresando")
+       }
+    }
+
 
 }//fin main
 
 class Alumno(
     val id: Int,
     val name: String,
-    var edad: Int
+    var edad: Int,
+    var nota: Float
 
 ) {
     override fun toString(): String {
@@ -54,12 +71,32 @@ class Clase(
     var alumnosDeClase: MutableList<Alumno>
 
 ) {
+
+
     override fun toString(): String {
         return "Clase(id='$id',alumnos='$alumnosDeClase')"
     }
+    companion object{
+        val isApproved:Boolean = true
+         val isProgressing:Boolean=false
+
+
+    }
+
+
 
 
 }
+fun alumnosAndNotas(alumno: Alumno):Boolean{
+   if(alumno.nota>5 ){
+       return Clase.isApproved
+   }else{
+       return Clase.isProgressing
+   }
+
+}
+
+
 
 
 

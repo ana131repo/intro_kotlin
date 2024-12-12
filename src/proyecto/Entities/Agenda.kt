@@ -5,7 +5,7 @@ class Agenda(
 ) {
 
 
-    companion object {
+
         fun createContact() {
 
         }
@@ -22,7 +22,7 @@ class Agenda(
 
         }
 
-    }
+
 
 
 }

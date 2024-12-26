@@ -1,9 +1,9 @@
 package ejerciciosCadenas
 
 fun main(){
-   /* Crea una función que dados 2 strings los concatene y los devuelva
-    Ejemplo:
-    "esta es una cadena" y "otra cadena" -> "esta es una cadenaotra cadena"*/
+    /* Crea una función que dados 2 strings los concatene y los devuelva
+     Ejemplo:
+     "esta es una cadena" y "otra cadena" -> "esta es una cadenaotra cadena"*/
 
     println("Escribe un texto")
     var cad1 = readln()
